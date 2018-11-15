@@ -34,10 +34,9 @@ The web app also displays visualizations of the data as follows:
 	- ML Pipeline Preparation.ipynb
 - \app
 	- run.py
-	- templates
-	- \app\templates
-	- go.html
-	- master.html
+	- \templates
+	   - go.html
+	   - master.html
 - \data
 	- DisasterResponse.db
 	- disaster_categories.csv
