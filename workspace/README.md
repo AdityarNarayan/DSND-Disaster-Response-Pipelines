@@ -10,6 +10,10 @@ I use python 3.5 to create this project and the main libraries I used are:
 - pandas==0.23.4
 - plotly==3.3.0
 - sqlalchemy==1.2.12
+- jsonschema==2.6.0
+
+Please check detailed version information in requirement.txt.
+
 
 ## 2. Project Motivation
 
@@ -17,7 +21,7 @@ Project code is deployed a program as a web application in the internet. The web
 
 I create a machine learning pipeline to categorize these events so that I can send the messages to an appropriate disaster relief agency. I split the data into a training set and a test set. Then,I create a machine learning pipeline that uses NLTK, as well as scikit-learn's Pipeline and GridSearchCV to output a final model. Finally, I export the model to a pickle file.
 
-The project also include a web app where an emergency worker can input a new message and get classification results in several categories.
+The project also include a web app with bootstap and Flask where an emergency worker can input a new message and get classification results in several categories.
 ![disaster graph2](ds2.jpg)
 The web app also displays visualizations of the data as follows:
 ![disaster graph1](ds1.jpg)
@@ -40,7 +44,7 @@ The web app also displays visualizations of the data as follows:
 	- disaster_messages.csv
 	- process_data.py
 - \models
-	- classifier.pkl
+	- classifier.pkl : It is too big(about 2GB size)  to be included in the github.  To run ML pipeline that trains classifier and saves the trained model to classifier.pkl
 	- train_classifier.py
 
 ## 4.Instructions:
@@ -57,10 +61,8 @@ The web app also displays visualizations of the data as follows:
 
      3. Go to http://0.0.0.0:3001/
 
-## 5. Summary
-
-The program is deployed in the heroku website . It can be visited as the following links:
- - https://nettravel-disasterapp.herokuapp.com/
+## 5. GitHub link:
+   - https://github.com/bin-wang-sh/DSND-Disaster-Response-Pipelines
 
 ## 6. Licensing, Author, Acknowledgements
 This work is licensed under a [Creative Commons  Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/). Please refer to [Udacity Terms of Service](https://www.udacity.com/legal) for further information.
